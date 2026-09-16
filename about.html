@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · zzb07</title>
+  <meta name="description" content="关于 zzb07 的自我介绍。">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html">zzb07</a>
+      <nav><a href="./index.html">首页</a><a href="./blog.html">博客</a><a class="active" href="./about.html">关于</a></nav>
+      <div class="nav-actions"><button class="icon-button theme-toggle" type="button" aria-label="切换深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div>
+    </div>
+  </header>
+
+  <main class="container article-page">
+    <article class="prose">
+      <h1>关于我</h1>
+      <p class="lede">你好！我是 zzb07，是一个喜欢哲学的工科生。</p>
+      <p>我目前就读于北京大学医学部，专业为医学影像技术。我仿照我个人极为仰慕的学长Arthals创造了这个网站，相信熟悉a神的同学已经发现</p>
+      <p>我不太清楚我的兴趣，很多事情都还在我的探索中</p>
+      <h2>我正在做的事</h2>
+      <ul><li>维护这个个人网站，并持续写博客。</li><li>探索我的兴趣和天赋。</li></ul>
+      <h2>联系我</h2>
+      <p>欢迎通过邮件交流：<a href="mailto:you@example.com">zibozhang0824@outlook.com</a></p>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 zzb07</p><p>Designed for curiosity.</p></div></footer>
+  <script src="assets/main.js" type="module"></script>
+</body>
+</html>

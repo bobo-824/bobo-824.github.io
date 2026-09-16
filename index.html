@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home · zzb07</title>
+  <meta name="description" content="zzb07 的个人主页与博客。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html">zzb07</a>
+      <nav>
+        <a href="./index.html">首页</a>
+        <a href="./blog.html">博客</a>
+        <a href="./about.html">关于</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="切换深色模式">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-shell">
+    <section class="identity animate">
+      <img class="avatar" src="./assets/avatar.jpg" alt="zzb07 的头像">
+      <div class="identity-info">
+        <h1>zzb07</h1>
+        <div class="identity-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>China</span>
+          <a href="https://github.com/bobo-824" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 8.84 21.5c.5.08.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.16.57.67.48A10 10 0 0 0 12 2Z"/></svg>GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="home-columns">
+      <div class="content animate">
+        <section class="section-row">
+          <h2>关于</h2>
+          <div class="section-body">
+            <p class="role-line">Developer / Writer / Curious human</p>
+            <div class="about-text">
+              <p>你好，我是 zzb07，是一个喜欢哲学的工科生。</p>
+              <p>我目前就读于北京大学医学部，专业为医学影像技术</p>
+              <p>我仿照我个人极为仰慕的学长Arthals创造了这个网站，相信熟悉a神的同学已经发现</p>
+              <p>我不太清楚我的兴趣，很多事情都还在我的探索中</p>
+            </div>
+            <a class="chip link-chip" href="./about.html">More about me</a>
+          </div>
+        </section>
+
+        <section class="section-row">
+          <h2>Posts</h2>
+          <div class="section-body post-stack" id="latest-posts"></div>
+        </section>
+
+        <section class="section-row">
+          <h2>Education</h2>
+          <div class="section-body card-stack">
+            <a class="info-card" href="#" target="_blank" rel="noreferrer">
+              <h3>北京大学医学部</h3>
+              <p>医学影像技术 / 工学学士</p>
+              <p>August 2026 - Present</p>
+            </a>
+            <a class="info-card" href="#" target="_blank" rel="noreferrer">
+              <h3>北京大学医学部</h3>
+              <p>护理学 / 理学学士</p>
+              <p>August 2025 - August 2026</p>
+            </a>
+            <a class="info-card" href="#" target="_blank" rel="noreferrer">
+              <h3>清华附中朝阳学校</h3>
+              <p>第二实验班</p>
+              <p>September 2022 - July 2025</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section-row">
+          <h2>Skills</h2>
+          <div class="section-body card-stack">
+            <div class="skill-row"><h3>Web</h3><div class="skill-list"><span></span></div></div>
+            <div class="skill-row"><h3>Programming</h3><div class="skill-list"><span>Python</span></div></div>
+            <div class="skill-row"><h3>Tools</h3><div class="skill-list"><span></span></div></div>
+            <div class="skill-row"><h3>Other</h3><div class="skill-list"><span></span></div></div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="status-rail animate">
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <p>在这里记录长期想法。</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 zzb07</p>
+      <p>Designed for curiosity.</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" type="module"></script>
+</body>
+</html>

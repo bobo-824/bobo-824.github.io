@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Post · zzb07</title>
+  <meta name="description" content="博客文章。">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html">zzb07</a>
+      <nav><a href="./index.html">首页</a><a class="active" href="./blog.html">博客</a><a href="./about.html">关于</a></nav>
+      <div class="nav-actions"><button class="icon-button theme-toggle" type="button" aria-label="切换深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div>
+    </div>
+  </header>
+  <main class="container article-page">
+    <article class="prose">
+      <div class="post-meta" id="post-meta"></div>
+      <h1 id="post-title"></h1>
+      <div id="article-body"></div>
+      <p><a class="link-arrow" href="./blog.html">← 返回博客列表</a></p>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 zzb07</p><p>Designed for curiosity.</p></div></footer>
+  <script src="assets/main.js" type="module"></script>
+</body>
+</html>

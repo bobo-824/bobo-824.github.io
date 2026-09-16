@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog · zzb07</title>
+  <meta name="description" content="个人博客文章列表。">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html">zzb07</a>
+      <nav><a href="./index.html">首页</a><a class="active" href="./blog.html">博客</a><a href="./about.html">关于</a></nav>
+      <div class="nav-actions"><button class="icon-button theme-toggle" type="button" aria-label="切换深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div>
+    </div>
+  </header>
+  <main class="container page">
+    <section class="page-title">
+      <h1>Posts</h1>
+      <p class="lede">记录想法、学习与生活。</p>
+    </section>
+    <div id="post-list" class="post-list"></div>
+    <noscript>请启用 JavaScript，或直接打开 <a href="posts/hello-world.html">第一篇文章</a>。</noscript>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 zzb07</p><p>Designed for curiosity.</p></div></footer>
+  <script src="assets/main.js" type="module"></script>
+</body>
+</html>
